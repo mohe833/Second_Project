@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plural Quiz von Mohammed Keyru</title>
+<link rel="stylesheet" href="my.css">
+</head>
+<body>
+<h1 style="color: blueviolet;">Artikel Quiz 🧠</h1>
+<p id="inro">Welcome to my Web App. Mein Name ist Mohammed Keyru.</p>
+<p>Hier kannst du den Artikel von Nomen üben!</p>
+<div id="start-section">
+<input type="text" id="username" placeholder="Wie ist dein Name?">
+<button onclick="startQuiz()">Start</button>
+</div>
+<div id="quiz-section" style="display: none;">
+<p id="question"></p>
+<input type="text" id="answer" placeholder="Schreib den Artikel">
+<button id="confirm-btn" onclick="checkAnswer()">Bestätigen</button>
+<p id="feedback"></p>
+<p id="score"></p>
+</div>
+<script src="my.js"></script>
+</body>
+</html>
