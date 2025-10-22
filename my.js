@@ -114,7 +114,7 @@ function checkAnswer() {
 
     const userAnswer = document.getElementById("answer").value.trim();
 
-    if (userAnswer === correctAnswer) {
+    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
 
         score++;
 
