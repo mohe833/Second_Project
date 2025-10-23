@@ -54,10 +54,10 @@ const wortliste = {
     "Schnecke": "die",
     "Wespe": "die",
     "Wolf": "der",
-    "der Wurm": "Würmer",
+    "Wurm": "der",
     "Zebra": "das",
     "Ziege": "die",
-    "Zoo": "Zoos"
+    "Zoo": "der"
 
 
 };
