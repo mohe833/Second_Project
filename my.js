@@ -22,7 +22,7 @@ const wortliste = {
     "Kuh": "die",
     "Löwe": "der",
     "Maus": "die",
-    "Pferd": "der",
+    "Pferd": "das",
     "Schaf": "das",
     "Schlange": "die",
     "Schwanz": "der",
