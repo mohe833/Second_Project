@@ -57,7 +57,7 @@ const wortliste = {
     "Wurm": "der",
     "Zebra": "das",
     "Ziege": "die",
-    
+
 
 
 };
