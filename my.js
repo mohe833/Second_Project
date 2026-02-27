@@ -70,7 +70,7 @@ function showQuestion() {
 
         const currentWord = words[currentIndex];
 
-        document.getElementById("question").innerText = `Was ist der Plural von "${currentWord}"?`;
+        document.getElementById("question").innerText = `Was ist der Artikel von "${currentWord}"?`;
 
         document.getElementById("answer").value = "";
 
