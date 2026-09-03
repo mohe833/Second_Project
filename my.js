@@ -6,7 +6,7 @@ let wrongAnswers = [];
 const wortliste = [
   { word: "At-Zeichen", image: "Images/at_zeichen.jpg" },
   { word: "der Laptop", image: "Images/laptop.jpg" },
-  { word: "der Bildschirm / der Monitor", Image: "Images/bildschirm_monitor.jpg" },
+  { word: "der Bildschirm / der Monitor", image: "Images/bildschirm_monitor.jpg" },
   { word: "die Tastatur", image: "Images/tastatur.jpg" },
   { word: "der Akku ist leer", image: "Images/akku_leer.jpg" },
   { word: "der Computer (PC)", image: "Images/computer.jpg" },
