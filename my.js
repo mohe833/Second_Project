@@ -4,24 +4,24 @@ let currentIndex = 0;
 let wrongAnswers = [];
 
 const wortliste = [
-  { word: "At-Zeichen", image: "images/at_zeichen.jpg" },
-  { word: "der Laptop", image: "images/laptop.jpg" },
-  { word: "der Bildschirm / der Monitor", image: "images/bildschirm_monitor.jpg" },
-  { word: "die Tastatur", image: "images/tastatur.jpg" },
-  { word: "der Akku ist leer", image: "images/akku_leer.jpg" },
-  { word: "der Computer (PC)", image: "images/computer.jpg" },
-  { word: "Teams", image: "images/teams.jpg" },
-  { word: "der Akku ist voll", image: "images/akku_voll.jpg" },
-  { word: "aufladen", image: "images/aufladen.jpg" },
-  { word: "das Word", image: "images/word.jpg" },
-  { word: "das Internet", image: "images/internet_symbol.jpg" },
-  { word: "die Maus", image: "images/maus.jpg" },
-  { word: "die linke Maustaste", image: "images/linke_maustaste.jpg" },
-  { word: "die rechte Maustaste", image: "images/rechte_maustaste.jpg" },
-  { word: "der USB-Stick", image: "images/usb_stick.jpg" },
-  { word: "das Ladegerät", image: "images/ladegerät.jpg" },
-  { word: "der Drucker", image: "images/drucker.jpg" },
-  { word: "die Taskleiste", image: "images/taskleiste.jpg" }
+  { word: "At-Zeichen", image: "Images/at_zeichen.jpg" },
+  { word: "der Laptop", image: "Images/laptop.jpg" },
+  { word: "der Bildschirm / der Monitor", Image: "images/bildschirm_monitor.jpg" },
+  { word: "die Tastatur", image: "Images/tastatur.jpg" },
+  { word: "der Akku ist leer", image: "Images/akku_leer.jpg" },
+  { word: "der Computer (PC)", image: "Images/computer.jpg" },
+  { word: "Teams", image: "Images/teams.jpg" },
+  { word: "der Akku ist voll", image: "Images/akku_voll.jpg" },
+  { word: "aufladen", image: "Images/aufladen.jpg" },
+  { word: "das Word", image: "Images/word.jpg" },
+  { word: "das Internet", image: "Images/internet_symbol.jpg" },
+  { word: "die Maus", image: "Images/maus.jpg" },
+  { word: "die linke Maustaste", image: "Images/linke_maustaste.jpg" },
+  { word: "die rechte Maustaste", image: "Images/rechte_maustaste.jpg" },
+  { word: "der USB-Stick", image: "Images/usb_stick.jpg" },
+  { word: "das Ladegerät", image: "Images/ladegerät.jpg" },
+  { word: "der Drucker", image: "Images/drucker.jpg" },
+  { word: "die Taskleiste", image: "Images/taskleiste.jpg" }
 ];
 
 wortliste.sort(() => Math.random() - 0.5);
