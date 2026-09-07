@@ -82,7 +82,7 @@ function checkAnswer() {
   }
 
   currentIndex++;
-  setTimeout(showQuestion, 1500);
+  setTimeout(showQuestion, 2000);
 }
 
 function endQuiz() {
