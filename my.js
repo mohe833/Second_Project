@@ -3,26 +3,27 @@ let score = 0;
 let currentIndex = 0;
 let wrongAnswers = [];
 
+// Added a custom "question" key to each item
 const wortliste = [
-  { word: "At-Zeichen", image: "Images/at_zeichen.jpg" },
-  { word: "der Monitor, Monitore", image: "Images/monitor.jpg" },
-  { word: "der Laptop, Laptops", image: "Images/laptop.jpg" },
-  { word: "der Bildschirm, Bildschirme", image: "Images/bildschirm_monitor.jpg" },
-  { word: "die Tastatur, Tastaturen", image: "Images/tastatur.jpg" },
-  { word: "der Akku ist leer", image: "Images/akku_leer.jpg" },
-  { word: "der Computer, Computer", image: "Images/computer.jpg" },
-  { word: "Teams", image: "Images/teams.jpg" },
-  { word: "der Akku ist voll", image: "Images/akku_voll.jpg" },
-  { word: "aufladen", image: "Images/aufladen.jpg" },
-  { word: "das Word", image: "Images/word.jpg" },
-  { word: "das Internet", image: "Images/internet_symbol.jpg" },
-  { word: "die Maus, Mäuse", image: "Images/maus.jpg" },
-  { word: "die linke Maustaste, die linken Maustatsten", image: "Images/linke_maustaste.jpg" },
-  { word: "die rechte Maustaste, die rechten Maustasten", image: "Images/rechte_maustaste.jpg" },
-  { word: "der USB-Stick, USB-Sticks", image: "Images/usb_stick.jpg" },
-  { word: "das Ladegerät, Ladegeräte", image: "Images/ladegerät.jpg" },
-  { word: "der Drucker, Drucker", image: "Images/drucker.jpg" },
-  { word: "die Taskleiste, Taskleisten", image: "Images/taskleiste.jpg" }
+  { word: "At-Zeichen", image: "Images/at_zeichen.jpg", question: "Wie heisst dieses Zeichen?" },
+  { word: "der Monitor, Monitore", image: "Images/monitor.jpg", question: "Wie heisst dieses Gerät?" },
+  { word: "der Laptop, Laptops", image: "Images/laptop.jpg", question: "Wie heisst dieses Gerät?" },
+  { word: "der Bildschirm, Bildschirme", image: "Images/bildschirm_monitor.jpg", question: "Wie heisst dieses Gerät?" },
+  { word: "die Tastatur, Tastaturen", image: "Images/tastatur.jpg", question: "Wie heisst dieses Gerät?" },
+  { word: "der Akku ist leer", image: "Images/akku_leer.jpg", question: "Wie ist der Status?" },
+  { word: "der Computer, Computer", image: "Images/computer.jpg", question: "Wie heisst dieses Gerät?" },
+  { word: "Teams", image: "Images/teams.jpg", question: "Wie heisst diese Software?" },
+  { word: "der Akku ist voll", image: "Images/akku_voll.jpg", question: "Wie ist der Status?" },
+  { word: "aufladen", image: "Images/aufladen.jpg", question: "Welches Verb passt dazu?" },
+  { word: "das Word", image: "Images/word.jpg", question: "Wie heisst dieses Programm?" },
+  { word: "das Internet", image: "Images/internet_symbol.jpg", question: "Was stellt dieses Symbol dar?" },
+  { word: "die Maus, Mäuse", image: "Images/maus.jpg", question: "Wie heisst dieses Gerät?" },
+  { word: "die linke Maustaste, die linken Maustatsten", image: "Images/linke_maustaste.jpg", question: "Wie heisst dieser Teil der Maus?" },
+  { word: "die rechte Maustaste, die rechten Maustasten", image: "Images/rechte_maustaste.jpg", question: "Wie heisst dieser Teil der Maus?" },
+  { word: "der USB-Stick, USB-Sticks", image: "Images/usb_stick.jpg", question: "Wie heisst dieses Speichermedium?" },
+  { word: "das Ladegerät, Ladegeräte", image: "Images/ladegerät.jpg", question: "Wie heisst dieses Gerät?" },
+  { word: "der Drucker, Drucker", image: "Images/drucker.jpg", question: "Wie heisst dieses Gerät?" },
+  { word: "die Taskleiste, Taskleisten", image: "Images/taskleiste.jpg", question: "Wie heisst dieser Bereich auf dem Bildschirm?" }
 ];
 
 wortliste.sort(() => Math.random() - 0.5);
@@ -55,12 +56,15 @@ function showQuestion() {
 
   document.getElementById("progress").innerText = `Frage ${currentIndex + 1} von ${wortliste.length}`;
   document.getElementById("word-image").src = current.image;
-  document.getElementById("question").innerText = "Wie heisst dieses Objekt?";
+
+  // Updated to use the custom question property from the current word object
+  // Uses a fallback sentence if question is not provided
+  document.getElementById("question").innerText = current.question || "Wie heisst dieses Objekt?";
+
   document.getElementById("answer").value = "";
   document.getElementById("feedback").innerText = "";
   document.getElementById("score").innerText = `${user}: ${score} Punkte`;
 
-  // Focus the answer box automatically for fast typing
   document.getElementById("answer").focus();
 }
 
@@ -112,11 +116,9 @@ function endQuiz() {
 // Global Enter Key Listener
 document.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
-    // If the start screen is visible, start the quiz
     if (document.getElementById("start-section").style.display !== "none") {
       startQuiz();
     } else {
-      // Otherwise, submit the answer
       const confirmBtn = document.getElementById("confirm-btn");
       if (confirmBtn) {
         confirmBtn.click();
