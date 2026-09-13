@@ -18,11 +18,17 @@ const wortliste = [
   { word: "das Word", image: "Images/word.jpg", question: "Wie heisst dieses Programm?" },
   { word: "das Internet", image: "Images/internet_symbol.jpg", question: "Was stellt dieses Symbol dar?" },
   { word: "die Maus, Mäuse", image: "Images/maus.jpg", question: "Wie heisst dieses Gerät?" },
-  { word: "die linke Maustaste, die linken Maustatsten", image: "Images/linke_maustaste.jpg", question: "Wie heisst dieser Teil der Maus?" },
+  { word: "die linke Maustaste, die linken Maustasten", image: "Images/linke_maustaste.jpg", question: "Wie heisst dieser Teil der Maus?" },
   { word: "die rechte Maustaste, die rechten Maustasten", image: "Images/rechte_maustaste.jpg", question: "Wie heisst dieser Teil der Maus?" },
   { word: "der USB-Stick, USB-Sticks", image: "Images/usb_stick.jpg", question: "Wie heisst dieses Speichermedium?" },
   { word: "das Ladegerät, Ladegeräte", image: "Images/ladegerät.jpg", question: "Wie heisst dieses Gerät?" },
   { word: "der Drucker, Drucker", image: "Images/drucker.jpg", question: "Wie heisst dieses Gerät?" },
+  { word: "der Akku, Akkus", image: "Images/akku.jpg", question: "Wie heisst dieses Gerät?" },
+  { word: "das Symbol, Symbole", image: "Images/symbol.jpg", question: "Wie sagt man das?" },
+  { word: "minimieren", image: "Images/minimieren.jpg", question: "Wie sagt man das?" },
+  { word: "maximieren", image: "Images/max.jpg", question: "Wie sagt man das?" },
+  { word: "der Explorer", image: "Images/explorer.jpg", question: "Wie heisst das?" },
+  { word: "das Dokument, Dokumente", image: "Images/dokument.jpg", question: "Wie sagt man das?" },
   { word: "die Taskleiste, Taskleisten", image: "Images/taskleiste.jpg", question: "Wie heisst dieser Bereich auf dem Bildschirm?" }
 ];
 
