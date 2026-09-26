@@ -5,31 +5,26 @@ let wrongAnswers = [];
 
 // Added a custom "question" key to each item
 const wortliste = [
-  { word: "At-Zeichen", image: "Images/at_zeichen.jpg", question: "Wie heisst dieses Zeichen?" },
-  { word: "der Monitor, Monitore", image: "Images/monitor.jpg", question: "Wie heisst dieses Gerät?" },
-  { word: "der Laptop, Laptops", image: "Images/laptop.jpg", question: "Wie heisst dieses Gerät?" },
-  { word: "der Bildschirm, Bildschirme", image: "Images/bildschirm_monitor.jpg", question: "Wie heisst dieses Gerät?" },
-  { word: "die Tastatur, Tastaturen", image: "Images/tastatur.jpg", question: "Wie heisst dieses Gerät?" },
-  { word: "der Akku ist leer", image: "Images/akku_leer.jpg", question: "Wie ist der Status?" },
-  { word: "der Computer, Computer", image: "Images/computer.jpg", question: "Wie heisst dieses Gerät?" },
-  { word: "Teams", image: "Images/teams.jpg", question: "Wie heisst diese Software?" },
-  { word: "der Akku ist voll", image: "Images/akku_voll.jpg", question: "Wie ist der Status?" },
-  { word: "aufladen", image: "Images/aufladen.jpg", question: "Welches Verb passt dazu?" },
-  { word: "das Word", image: "Images/word.jpg", question: "Wie heisst dieses Programm?" },
-  { word: "das Internet", image: "Images/internet_symbol.jpg", question: "Was stellt dieses Symbol dar?" },
-  { word: "die Maus, Mäuse", image: "Images/maus.jpg", question: "Wie heisst dieses Gerät?" },
-  { word: "die linke Maustaste, die linken Maustasten", image: "Images/linke_maustaste.jpg", question: "Wie heisst dieser Teil der Maus?" },
-  { word: "die rechte Maustaste, die rechten Maustasten", image: "Images/rechte_maustaste.jpg", question: "Wie heisst dieser Teil der Maus?" },
-  { word: "der USB-Stick, USB-Sticks", image: "Images/usb_stick.jpg", question: "Wie heisst dieses Speichermedium?" },
-  { word: "das Ladegerät, Ladegeräte", image: "Images/ladegerät.jpg", question: "Wie heisst dieses Gerät?" },
-  { word: "der Drucker, Drucker", image: "Images/drucker.jpg", question: "Wie heisst dieses Gerät?" },
-  { word: "der Akku, Akkus", image: "Images/akku.jpg", question: "Wie heisst dieses Gerät?" },
-  { word: "das Symbol, Symbole", image: "Images/symbol.jpg", question: "Wie sagt man das?" },
-  { word: "minimieren", image: "Images/minimieren.jpg", question: "Wie sagt man das?" },
-  { word: "maximieren", image: "Images/max.jpg", question: "Wie sagt man das?" },
-  { word: "der Explorer", image: "Images/explorer.jpg", question: "Wie heisst das?" },
-  { word: "das Dokument, Dokumente", image: "Images/dokument.jpg", question: "Wie sagt man das?" },
-  { word: "die Taskleiste, Taskleisten", image: "Images/taskleiste.jpg", question: "Wie heisst dieser Bereich auf dem Bildschirm?" }
+  { word: "der Gummihandschuh, Gummihandschuhe", image: "Images/gummi.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "der Sicherheitsschuh, Sicherheitsschuhe", image: "Images/sicherheitsschuhe.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "der Schutzhandschuh, Schutzhandschuhe", image: "Images/handschuhe.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "die Feinstaubfiltermaske, Feinstaubfiltermasken", image: "Images/maske.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "der Gehörschutz, Gehörschutze", image: "Images/gehörschutz.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "der Gehörschutzstöpsel, Gehörschutzstöpsel", image: "Images/töpsel.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "die Schutzbrille, Schutzbrillen", image: "Images/brille.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "der Schutzhelm, Schutzhelme", image: "Images/helm.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "die Warnweste, Warnwesten", image: "Images/weste.jpg", question: "Wie heisst diese Kleidung?" },
+  { word: "die Arbeitskleidung, Arbeitskleidungen", image: "Images/kleidung.jpg", question: "Wie heisst diese Kleidung?" },
+  { word: "die Ausrüstung, Ausrüstungen", image: "Images/ausrüstung.jpg", question: "Wie heisst dieser Begriff?" },
+  { word: "der Schutzanzug, Schutzanzüge", image: "Images/anzug.jpg", question: "Wie heisst diese Kleidung?" },
+  { word: "der Knieschoner, Knieschoner", image: "Images/schoner.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "der Auffanggurt, Auffanggurte", image: "Images/gurt.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "die Schweisshandschuhe, Schweisshandschuhe", image: "Images/schweisshandschuhe.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "der Gesichtsschutz, Gesichtsschutze", image: "Images/gesichtschutz.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "die Mütze, Mützen", image: "Images/muetze.jpg", question: "Wie heisst diese Kopfbedeckung?" },
+  { word: "die Arbeitshose, Arbeitshosen", image: "Images/arbeitshose.jpg", question: "Wie heisst diese Kleidung?" },
+  { word: "der Schweisshelm, Schweisshelme", image: "Images/schweisshelm.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "das Symbol persönliche Schutzausrüstung, Symbole persönliche Schutzausrüstung", image: "Images/persönliche symbole.jpg", question: "Was stellt dieses Symbol dar?" }
 ];
 
 wortliste.sort(() => Math.random() - 0.5);
@@ -93,7 +88,7 @@ function checkAnswer() {
   }
 
   currentIndex++;
-  setTimeout(showQuestion, 2000);
+  setTimeout(showQuestion, 4000);
 }
 
 function endQuiz() {
