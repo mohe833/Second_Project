@@ -19,9 +19,9 @@ const wortliste = [
   { word: "der Schutzanzug, Schutzanzüge", image: "Images/anzug.jpg", question: "Wie heisst diese Kleidung?" },
   { word: "der Knieschoner, Knieschoner", image: "Images/schoner.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
   { word: "der Auffanggurt, Auffanggurte", image: "Images/gurt.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
-  { word: "die Schweisshandschuhe, Schweisshandschuhe", image: "Images/schweisshandschuhe.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
-  { word: "der Gesichtsschutz, Gesichtsschutze", image: "Images/gesichtschutz.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
-  { word: "die Mütze, Mützen", image: "Images/muetze.jpg", question: "Wie heisst diese Kopfbedeckung?" },
+  { word: "die Schweisshandschuh, Schweisshandschuhe", image: "Images/schweisshandschuhe.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "der Gesichtsschutz, Gesichtsschutze", image: "Images/gesichtshutz.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
+  { word: "die Mütze, Mützen", image: "Images/mütze.jpg", question: "Wie heisst diese Kopfbedeckung?" },
   { word: "die Arbeitshose, Arbeitshosen", image: "Images/arbeitshose.jpg", question: "Wie heisst diese Kleidung?" },
   { word: "der Schweisshelm, Schweisshelme", image: "Images/schweisshelm.jpg", question: "Wie heisst dieser Schutzgegenstand?" },
   { word: "das Symbol persönliche Schutzausrüstung, Symbole persönliche Schutzausrüstung", image: "Images/persönliche symbole.jpg", question: "Was stellt dieses Symbol dar?" }
